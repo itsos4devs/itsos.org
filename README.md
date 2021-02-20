@@ -1,2 +1,2 @@
-# itsos.org
-Code repo for our main website.
+# wupmemo.github.io
+ITSOS Website

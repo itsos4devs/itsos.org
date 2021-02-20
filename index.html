@@ -1,46 +1,261 @@
-<!DOCTYPE HTML>
-<!--
-	Aerial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Aerial by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Find mentor, Learn and become an IT profeessional.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>ITSOS</title>
 
-				<!-- Header -->
-					<header id="header">
-						<img src="assets/css/images/logo.png" />
-						<nav>
-							<ul>
-								<li><a href="https://www.facebook.com/itsospage" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="https://github.com/wupmemo" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<li><a href="mailto:techteam@itsos.org?subject=Learning%20Programming&body=I'm%20interested%20in%20learning%20to%20code" target="_blank" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
-						</nav>
-					</header>
+    <!-- Page styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
+    <link rel="stylesheet" href="styles.css">
 
-				<!-- Footer -->
-					<footer id="footer">
-						<span class="copyright">&copy; ITSOS Team is always happy to take new challenges.</span>
-					</footer>
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons//favicon-16x16.png">
+    <link rel="manifest" href="/images/icons//site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
-			</div>
-		</div>
-		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://itsos.org/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ITSOS">
+    <meta property="og:description" content="Find mentor, Learn and become an IT profeessional.">
+    <meta property="og:image" content="/images/logo.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="itsos.org">
+    <meta property="twitter:url" content="https://itsos.org/">
+    <meta name="twitter:title" content="ITSOS">
+    <meta name="twitter:description" content="Find mentor, Learn and become an IT profeessional.">
+    <meta property="og:image" content="/images/logo.png">
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JH93D4YWKH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JH93D4YWKH');
+    </script>      
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+      <div class="itsos-header mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row">
+          <span class="itsos-title mdl-layout-title">
+            <img src="images/logo.png">
+          </span>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="itsos-header-spacer mdl-layout-spacer"></div>
+          <div class="itsos-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+            <!-- <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
+              <i class="material-icons">search</i>
+            </label> -->
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="search-field">
+            </div>
+          </div>
+          <!-- Navigation -->
+          <div class="itsos-navigation-container">
+            <nav class="itsos-navigation mdl-navigation">
+              <!-- <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">IT Hall</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Mentors</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Live <span class="material-icons">live_tv</span></a> -->
+            </nav>
+          </div>
+          <span class="itsos-mobile-title mdl-layout-title">
+            <img class="itsos-logo-image" src="images/logo.png">
+          </span>
+          <!-- <button class="itsos-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
+            <i class="material-icons">more_vert</i>
+          </button> -->
+        </div>
+      </div>
+      <!-- <div class="itsos-drawer mdl-layout__drawer">
+        <span class="mdl-layout-title">
+          <img class="itsos-logo-image" src="images/logo.png">
+        </span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">lorem</a>
+          <a class="mdl-navigation__link" href="">lorem</a>
+          <a class="mdl-navigation__link" href="">lorem</a>
+        </nav>
+      </div> -->
+
+      <div class="itsos-content mdl-layout__content">
+        <div class="itsos-be-together-section mdl-typography--text-center">
+          <div class="logo-font itsos-slogan">find a mentor. start your journey.</div>
+          <div class="logo-font itsos-sub-slogan">welcome to itsos ...<a class="mdl-typography--text-center"
+            href="javascript:void(
+              window.open(
+                'https://form.jotform.com/210164043213438', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500'))">fill in the form</a> and we will find your mentor.</div>
+          <img src="images/slide01.jpg" style="width:80%"/>
+        </div>
+
+        <div class="itsos-screen-section mdl-typography--text-center">
+          <a name="screens"></a>
+          <div class="mdl-typography--display-1-color-contrast">Read our Blog</div>
+          <div class="itsos-screens">
+            <div id="medium-widget"></div>
+            <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+            <script>MediumWidget.Init({renderTo: '#medium-widget', params: {
+              "resource":"https://medium.com/@itsos-techteam",
+              "postsPerLine":1,"limit":4,"picture":"medium",
+              "fields":["description","author","publishAt"],"ratio":"landscape"
+              }})</script>                       
+          </div>
+        </div>
+
+        <!-- <div class="itsos-wear-section">
+          <div class="itsos-wear-band">
+            <div class="itsos-wear-band-text">
+              <div class="mdl-typography--display-2 mdl-typography--font-thin">The best of Google built in</div>
+              <p class="mdl-typography--headline mdl-typography--font-thin">
+                itsos works perfectly with your favourite apps like Google Maps,
+                Calendar and YouTube.
+              </p>
+              <p>
+                <a class="mdl-typography--font-regular mdl-typography--text-uppercase itsos-alt-link" href="">
+                  See what's new in the Play Store&nbsp;<i class="material-icons">chevron_right</i>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- <div class="itsos-customized-section">
+          <div class="itsos-customized-section-text">
+            <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Customised by you, for you</div>
+            <p class="mdl-typography--font-light">
+              Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos.
+              <br>
+              <a href="" class="itsos-link mdl-typography--font-light">Customise your phone</a>
+            </p>
+          </div>
+          <div class="itsos-customized-section-image"></div>
+        </div> -->
+
+        <!-- <div class="itsos-more-section">
+          <div class="itsos-section-title mdl-typography--display-1-color-contrast">More from itsos</div>
+          <div class="itsos-card-container mdl-grid">
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/more-from-1.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Get going on itsos</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Four tips to make your switch to itsos quick and easy</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="itsos-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Make the switch
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/more-from-4.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Create your own itsos character</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Turn the little green itsos mascot into you, your friends, anyone!</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="itsos-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   itsosify.com
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/more-from-2.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Get a clean customisable home screen</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">A clean, simple, customisable home screen that comes with the power of Google Now: Traffic alerts, weather and much more, just a swipe away.</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="itsos-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Download now
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-card__media">
+                <img src="images/more-from-3.png">
+              </div>
+              <div class="mdl-card__title">
+                 <h4 class="mdl-card__title-text">Millions to choose from</h4>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <span class="mdl-typography--font-light mdl-typography--subhead">Hail a taxi, find a recipe, run through a temple – Google Play has all the apps and games that let you make your itsos device uniquely yours.</span>
+              </div>
+              <div class="mdl-card__actions">
+                 <a class="itsos-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
+                   Find apps
+                   <i class="material-icons">chevron_right</i>
+                 </a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <footer class="itsos-footer mdl-mega-footer">
+
+          <div class="mdl-mega-footer--middle-section">
+            <p class="mdl-typography--font-light">Copywrite © 2014 ITSOS</p>
+            <p class="mdl-typography--font-light">We are a community for learners lead by real mentors</p>
+          </div>
+
+          <div class="mdl-mega-footer--bottom-section">
+            <!-- <a class="itsos-link itsos-link-menu mdl-typography--font-light" id="version-dropdown">
+              Contact us
+            </a>
+            <a class="itsos-link itsos-link-menu mdl-typography--font-light" id="developers-dropdown">
+              Our Developers
+            </a> -->
+            <a class="itsos-link mdl-typography--font-light" href="https://itsos-techteam.medium.com/">Blog</a>
+            <a class="itsos-link mdl-typography--font-light" href="#">Privacy Policy</a>
+          </div>
+
+        </footer>
+      </div>
+    </div>
+    <!-- <a href="https://github.com/itsos4devs/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">< Github /></a> -->
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </body>
 </html>
