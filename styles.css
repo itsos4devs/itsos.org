@@ -190,8 +190,9 @@ a img{
 
 .itsos-slogan {
   font-family: Stick;
-  font-size: 45pt;
+  font-size: 50pt;
   padding-top: 40px;
+  font-weight: 600;
 }
 
 .itsos-text {
