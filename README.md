@@ -1,2 +1,2 @@
-# apps.itsos.org
+# itsos.org
 ITSOS Apps and services for the public
