@@ -1,23 +1,20 @@
 /**
- * Copyright 2015 Google Inc. All Rights Reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ * ITSOS 2014 Public domain 
  */
 
 body {
   margin: 0;
 }
 
+/* custom fonts */
+
+h1, h3 {
+  font-family: Stick;
+}
+
+h3, h4, h5, p {
+  font-family: 'Nanum Gothic', sans-serif;
+}
 /* Disable ugly boxes around images in IE10 */
 a img{
   border: 0px;
@@ -48,9 +45,17 @@ a img{
 }
 
 .medium-widget {
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
   text-align: left;
+}
+
+.medium-widget a {
+  color: #ffffff;
+}
+
+.medium-widget div {
+  color: #27ff00;
 }
 
 .itsos-fab {
@@ -179,13 +184,19 @@ a img{
 .logo-font {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   line-height: 1;
-  color: #767777;
+  color: #024468;
   font-weight: 500;
 }
 
 .itsos-slogan {
-  font-size: 60px;
-  padding-top: 160px;
+  font-family: Stick;
+  font-size: 45pt;
+  padding-top: 40px;
+}
+
+.itsos-text {
+  font-family: Nanum Gothic;
+  color: #185a0d;
 }
 
 .itsos-sub-slogan {
@@ -204,10 +215,10 @@ a img{
     font-weight: 300;
   }
 
-.itsos-screen-section {
+.itsos-blog-section {
   position: relative;
-  padding-top: 60px;
-  padding-bottom: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .itsos-screens {
@@ -290,6 +301,10 @@ a img{
   overflow: hidden;
 }
 
+.itsos-content {
+  display: block;
+}
+
   .itsos-auto .itsos-screen-image {
     display: block;
     height: 300px;
@@ -299,23 +314,17 @@ a img{
 
 .itsos-wear-section {
   position: relative;
-  background: url('images/wear.png') center top no-repeat;
-  background-size: cover;
-  height: 800px;
 }
 
 .itsos-wear-band {
-  position: absolute;
-  bottom: 0;
+  position: relative;
   width: 100%;
   text-align: center;
-  background-color: #37474f;
+  background-color: #024468;
 }
 
 .itsos-wear-band-text {
-  max-width: 800px;
-  margin-left: 25%;
-  padding: 24px;
+  margin-left: 15%;
   text-align: left;
   color: white;
 }
@@ -326,7 +335,7 @@ a img{
 
 .itsos-link {
   text-decoration: none;
-  color: #8bc34a !important;
+  color: #609227 !important;
 }
 
   .itsos-link:hover {
@@ -359,7 +368,6 @@ a img{
 }
 
 .itsos-customized-section-text {
-  max-width: 500px;
   margin-left: auto;
   margin-right: auto;
   padding: 80px 16px 0 16px;
@@ -370,9 +378,7 @@ a img{
   }
 
 .itsos-customized-section-image {
-  background: url('images/devices.jpg') center top no-repeat;
   background-size: cover;
-  height: 400px;
 }
 
 .itsos-more-section {
@@ -410,7 +416,6 @@ a img{
   }
 
   .itsos-card-container .mdl-card__supporting-text {
-    height: auto;
     color: black;
     padding-bottom: 56px;
   }
@@ -426,12 +431,13 @@ a img{
   }
 
 .itsos-footer {
-  background-color: #fafafa;
+  background-color: #002336;
   position: relative;
+  padding: 20px 150px;
 }
 
   .itsos-footer a:hover {
-    color: #8bc34a;
+    color: #00af2c;
   }
 
   .itsos-footer .mdl-mega-footer--top-section::after {

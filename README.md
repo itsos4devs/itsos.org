@@ -1,2 +1,2 @@
-# itsos4devs.github.io
-ITSOS Website
+# apps.itsos.org
+ITSOS Apps and services for the public
